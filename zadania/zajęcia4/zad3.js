@@ -1,6 +1,7 @@
-funkction search(tab[n], find)
+function search(tab, find)
 	{
-		for (var i=1; i <=n; i++)
+  
+		for (var i=1; i <=tab.length; i++)
 			{
 				if(tab[i]==find)
 				{
@@ -8,3 +9,4 @@ funkction search(tab[n], find)
 				}
 		}
 	}
+  
