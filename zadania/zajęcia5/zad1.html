@@ -1,23 +1,63 @@
-var name = document.getElementById('heading');
-name.innerHTML = 'Magdalena Wojciechowska ';
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Zadanie 1.</title>
+	</head>
+	<body>
+		<h1 id="heading">xyz</h1>
+		<p id="paragraph-one">xyz</p>
+		<p id="paragraph-two">xyz</p>
+		<p id="paragraph-three">xyz</p>
+		<p id="paragraph-four">xyz</p>
+		
+	<script>
+			document.getElementById('heading').innerHTML="Magdalena Wojciechowsa";
 
-var date = document.getElementById('paragraph-one');
-var daysOfWeek = ['poniedziałek', 'wtorek', 'środa', 'czwartek',
-'piątek', 'sobota', 'niedziela'];
-var months = ['stycznia', 'lutego', 'marca', 'kwietnia', 'maja',
-'czerwca', 'lipca', 'sierpnia', 'wrzesienia', 'października',
-'listopada', 'grudnia'];
+		var date = document.getElementById('paragraph-one');
+		var daysOfWeek = ['poniedziałek', 'wtorek', 'środa', 'czwartek',
+		'piątek', 'sobota', 'niedziela'];
+		var months = ['stycznia', 'lutego', 'marca', 'kwietnia', 'maja',
+		'czerwca', 'lipca', 'sierpnia', 'wrzesienia', 'października',
+		'listopada', 'grudnia'];
 
-var d = new Date();
-var days = daysOfWeek[d.getDay()];
-var month = months[d.getMonth()];
-var day = d.getDate();
-var year = d.getFullYear();
-var hour = d.getHours();
-var minutes = d.getMinutes();
-var seconds = d.getSeconds();
-var mseconds = d.getMilliseconds();
-date.innerHTML =  'Data, która pojawi się przy otwarciu tej strony to: ' + days + ", " + day +", " + month +", "+ year + 'Godzina w momencie otwarcia strony: '+ hour + ":" + minutes + ":" + seconds + ":" + mseconds;
+		var d = new Date();
+		var days = daysOfWeek[d.getDay()];
+		var month = months[d.getMonth()];
+		var day = d.getDate();
+		var year = d.getFullYear();
+		var hour = d.getHours();
+		var minutes = d.getMinutes();
+		var seconds = d.getSeconds();
+		var mseconds = d.getMilliseconds();
+		date.innerHTML = 'Data, która pojawi się przy otwarciu tej strony to: ' + days + ", " + day +", " + month +", "+ year +" .<br/>"+
+		'Godzina w momencie otwarcia strony: '+ hour + ":" + minutes + ":" + seconds + ":" + mseconds;
 
-var sentence = document.getElementById('paragraph-two');
-sentence.innerHTML = 
+		var sentence = document.getElementById('paragraph-two');
+		var s = "Podstawą szczęścia jest wolność, a podstawą wolności odwaga.";
+		sentence.innerHTML = 'Operuję na zdaniu: "Podstawą szczęścia jest wolność, a podstawą wolności odwaga."'+" .<br/>"+" .<br/>"+  'Trzynastym znakiem w tym zdaniu jest: '
+		+ s.charAt(13) +" .<br/>"+ 'Znaki pomiędzy 7. a 12. pozycją to: '+ s.substring(7,12)+" .<br/>"+'Ten ciąg ma '+s.length+' znaków.'+ ".<br/>"
+		+'Po zamianie "podstawą" na "fundamentem" mamy: '+s.replace("podstawą","fundamentem")+".<br/>"+'Część zdania przed przecinkiem to: '+s.split(",")[0]+".<br/>"
+		+'Druga część zdania po odwróceniu to: '+s.split(",")[1].split("").reverse().join("")+".<br/>";
+		
+		var math1 = document.getElementById('paragraph-three');
+		var d=Math.pow(5,2)-4*6;
+		var x1=(-5-Math.sqrt(d))/2;
+		var x2=(-5+Math.sqrt(d))/2;
+		math1.innerHTML ='Korzystam z dodatkowych wiadomości o obiekcie Math ze strony: http://kursjs.pl/kurs/math.php'+" .<br/>" + 'Zadanie 1. Mam funkcję kwadratową:'
+		+" .<br/>"+'f(x) = x^2 + 5x + 6'+" .<br/>"+ 'Wyróżnik tego trójmianu to:' + d +" .<br/>"+'Pierwiastek kwadratowy tego wyróżnika to: '
+		+Math.sqrt(d)+".<br/>"+'Miejscami zerowymi tej funkcji są: ' + x1 +', '+ x2 +".<br/>";
+		
+		var math2 = document.getElementById('paragraph-four');
+		var f=Math.sqrt(Math.abs(Math.sin(Math.log(Math.pow(2,Math.PI/6))) + Math.max(0, Math.PI/6) + Math.abs(-Math.pow(Math.E,(2*Math.PI/6)) + Math.min(-1, Math.PI/6))));
+		math2.innerHTML = 'Kontynuuję pracę z obiektem Math i używam obiektu Number:' +".<br/>"+ 'Zadanie 2. Obliczam wartość funkcji:'  +".<br/>"+
+		'f(x) = sqrt(|sin(ln(2^(x))) + max(0, x) + |-e^(2x) + min(-1, x)||) // ln() to logarytm naturalny dla x = pi/6.'+".<br/>"+
+		'Mój wynik to: '+ f +".<br/>"+ 'Wynik w notacji wykładniczej to:' + f.toExponential()+".<br/>"+
+		'Po zaokrąleniu wyniku w górę mam: '+Math.ceil(f);
+		
+	</script>
+	</body>
+</html>
+
+
+
