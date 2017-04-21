@@ -1,0 +1,23 @@
+var name = document.getElementById('heading');
+name.innerHTML = 'Magdalena Wojciechowska ';
+
+var date = document.getElementById('paragraph-one');
+var daysOfWeek = ['poniedziałek', 'wtorek', 'środa', 'czwartek',
+'piątek', 'sobota', 'niedziela'];
+var months = ['stycznia', 'lutego', 'marca', 'kwietnia', 'maja',
+'czerwca', 'lipca', 'sierpnia', 'wrzesienia', 'października',
+'listopada', 'grudnia'];
+
+var d = new Date();
+var days = daysOfWeek[d.getDay()];
+var month = months[d.getMonth()];
+var day = d.getDate();
+var year = d.getFullYear();
+var hour = d.getHours();
+var minutes = d.getMinutes();
+var seconds = d.getSeconds();
+var mseconds = d.getMilliseconds();
+date.innerHTML =  'Data, która pojawi się przy otwarciu tej strony to: ' + days + ", " + day +", " + month +", "+ year + 'Godzina w momencie otwarcia strony: '+ hour + ":" + minutes + ":" + seconds + ":" + mseconds;
+
+var sentence = document.getElementById('paragraph-two');
+sentence.innerHTML = 

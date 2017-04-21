@@ -5,6 +5,7 @@
 	 <link rel="Stylesheet" type="text/css" href="style.css" />
 	<link href='http://fonts.googleapis.com/css?family=Gruppo&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Amatic+SC&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Alex+Brush&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	<title>Aplikacja ToDo</title>
 </head>
 <body>
@@ -21,22 +22,22 @@
 	
     <section>
 		<div class="in">
-		  <h5>Dodaj nowe zadanie:</h5>
-		  <input type="text" name="nowe_zadanie">
-		  <input type="button" value=" + ">
+		  <div class="text">Dodaj nowe zadanie:</div>
+		  <input type="text" name="nowe_zadanie" class="nowe_zadanie">
+		  <input type="button" value=" + " class="nowe_zadanie">
 	  	</div>
 		
 		<div class="out">
-			<ul>Moja lista zadań:
+			<ul><div class="text">Moja lista zadań:</div>
 				<li>
-					<input type="checkbox" name="zad1">
+					<input type="checkbox" name="zad1" class="lista_zadan">
 					Zadanie pierwsze
-					<input type="button" value="Usuń" value="done"/>
+					<input type="button" value="Usuń" value="done" class="lista_zadan"/>
 				</li>
 				<li>
-					<input type="checkbox" name="zad2">
+					<input type="checkbox" name="zad2" class="lista_zadan">
 					Zadanie drugie
-					<input type="button" value="Usuń" value="done"/>
+					<input type="button" value="Usuń" value="done" class="lista_zadan"/>
 
 				</li>
 			</ul>
