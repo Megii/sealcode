@@ -49,8 +49,13 @@
 
 		function add(){
 			var input = document.getElementById("text").value;
+			if( input === ''){
+				alert("Napisz treść zadania");
+			}
+			else{
 				tabList[tabLength] = {tekst: input};
 				tabLength++;
+			}
 			reload();
 		}
 
