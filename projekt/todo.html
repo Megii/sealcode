@@ -11,43 +11,31 @@
 <body>
   <div class="wrapper">
     <header>
-
-      <h1>Co masz do zrobienia?</h1>
-	  
+      <h1>Co masz do zrobienia?</h1> 
     </header>
 
 	<img class=img src="work.jpg" />
+    <aside id="date"> </aside>
 	
-    <aside>DATA: 6 lutego 2017r.</aside>
-	
-    <section>
+   <section>
 		<div class="in">
-		  <div class="text">Dodaj nowe zadanie:</div>
-		  <input type="text" name="nowe_zadanie" class="nowe_zadanie">
-		  <input type="button" value=" + " class="nowe_zadanie">
-	  	</div>
+			<input type="text" class="nowe_zadanie" name="input" id="text" placeholder="Dodaj zadanie" />
+			<input type="button" class="nowe_zadanie" value="+"  onclick="add()"/>  
+		</div>
 		
 		<div class="out">
-			<ul><div class="text">Moja lista zadań:</div>
-				<li>
-					<input type="checkbox" name="zad1" class="lista_zadan">
-					Zadanie pierwsze
-					<input type="button" value="Usuń" value="done" class="lista_zadan"/>
-				</li>
-				<li>
-					<input type="checkbox" name="zad2" class="lista_zadan">
-					Zadanie drugie
-					<input type="button" value="Usuń" value="done" class="lista_zadan"/>
-
-				</li>
-			</ul>
+			<p>Twoja lista:</p>
+			<ul id="list"></ul>
 		</div>
-    </section>
-
+	</section>
+	
     <footer>
       Aplikacje wykonała Magdalena Wojciechowska w ramach warsztatów Sealcode.
     </footer>
 
   </div>
+  
+<script src="todo.js"></script>
+	
 </body>
 </html>

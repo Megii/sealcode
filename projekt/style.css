@@ -1,78 +1,99 @@
 .wrapper{
-	width: 920px;
-	height: 700px;
-	margin-top:30px;
-	margin-left:300px;
+	width: 64rem;
+	height: 46rem;
+	margin-top:1rem;
+	margin-left:10rem;
 	background:#acc3bd;
-	padding-left:30px;
+	padding-left:3rem;
 }
 
 header{
 	font-family: 'Gruppo', sans-serif;
-	font-size:25px;
-	padding-top:10px;
+	font-size:2rem;
+	padding-top:1rem;
 
 }
 
 .img{
 	position: absolute;
-    top: 16px;
-    right: 260px;
+    top: 0.1rem;
+    right: 16.4rem;
     
 }
 
 footer{
-	font-size:18px;
-	margin-top:60px;
-	margin-left:260px;
+	font-size:1rem;
+	margin-top:3rem;
+	margin-left:20rem;
+	margin-bottom:0.5rem;
 	font-family: 'Alex Brush', sans-serif;
 }
 
 aside{
 	font-family: 'Amatic SC', sans-serif;
-	font-size:40px;
+	font-size:2rem;
 	background: #F9F8ED;
-	width:300px;
-	padding:15px;
-	border-radius: 50px;
+	width:20rem;
+	padding:0.5rem;
+	border-radius: 1rem;
 	text-align:center;
 }
 
 .in{
-	width: 400px;
-	height: 120px;
+	width: 18rem;
+	height: 5rem;
 	background:#DFD8C8;
-	border-radius: 50px;
-	padding-left:40px;
-	margin-top: 30px;
+	border-radius: 2rem;
+	padding-left:3rem;
+	padding-top:1.5rem;
+	margin-top: 3rem;
 	
 }
 
 .out{
-	width: 440px;
-	height: 230px;
+	width: 20rem;
+	height: 16rem;
 	background:#DFD8C8;
-	border-radius: 50px;
-	margin-top:10px;
+	border-radius: 2rem;
+	padding-left:3.5rem;
+	margin-top:1.5rem;
 	font-family: 'Amatic SC', sans-serif;
-	font-size: 30px;
+	font-size: 2rem;
+	overflow: scroll;
+	
 }
+::-webkit-scrollbar {
+width: 0.5rem;
+height: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+border: none white;
+border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+background: white;  
+border-radius: 1rem;
+}
+
 
 .text{
 	font-family: 'Amatic SC', sans-serif;
-	font-size: 30px;
-	padding-top:10px;
-	padding-bottom:10px;
+	font-size: 2rem;
+	padding-top:0.5rem;
+	padding-bottom:0.5rem;
 	font-weight: bold;
 }
 
 input[type=text].nowe_zadanie{
-	padding: 12px 20px;
+	padding-left:0.5rem;
+	padding: 1rem 1 rem;
     border: none;
-    border-radius: 20px;
+    border-radius: 1rem;
 	background-color: #f1f1f1;
 	font-family: 'Amatic SC', sans-serif;
-	font-size:20px;
+	font-size:2rem;
 }
 
 
@@ -80,36 +101,30 @@ input[type=button].nowe_zadanie{
 	background-color: #336666;
     border: none;
     color: white;
-    padding: 3px 3px;
+    padding: 0,5rem 0,5rem;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 30px;
-	border-radius: 50px;
+    font-size: 2rem;
+	border-radius: 1rem;
  
 }
 
 ul{
 	 list-style-type: none;
+	 font-size: 1.5rem;
+	 border-radius: 1rem;
 }
 
 
-input[type=button].lista_zadan{
-	background-color: #336666;
+.delete{
+	width: 3.5rem;
+	height: 2.2rem;
+	padding: 1rem 1 rem;
     border: none;
-    color: white;
-    padding: 3px 3px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 18px;
-	border-radius: 50px;
-
- 
-}
-
-input[type=checkbox].lista_zadan{
-	width: 22px;
-	height: 22px;
-
+    border-radius: 1rem;
+	background-color: #336666;
+	color: white;
+	font-family: 'Amatic SC', sans-serif;
+	font-size:1.2rem;
 }
